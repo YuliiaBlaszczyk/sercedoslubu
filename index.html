@@ -2,30 +2,48 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serce do Ślubu</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Profesjonalna organizacja ślubów z sercem i pasją. Serce do Ślubu to Twoja plannerka z Ukrainy, z duszą w Polsce.">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Serce do Ślubu</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="omnie.html">O mnie</a></li>
-                <li><a href="oferta.html">Oferta</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+    <header class="hero">
+        <div class="logo">
+            <img src="logo.png" alt="Serce do Ślubu Logo">
+            <h1>Serce do Ślubu</h1>
+        </div>
+        <nav class="menu-toggle">
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="hamburger">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#oferta">Oferta</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <h2>Witaj!</h2>
-        <p>Twój wymarzony ślub zaczyna się tutaj.</p>
+        <section id="o-mnie" class="section">
+            <h2>O mnie</h2>
+            <p>Mam na imię Yuliia i jestem wedding plannerką z sercem do ślubów.</p>
+            <p>W tym roku zorganizowałam własny międzynarodowy ślub od podstaw, mieszkając za granicą.
+            Mój własny ślub to moje najlepsze portfolio — dowód na to, że potrafię połączyć marzenia, logistykę i emocje w jedno niezapomniane wydarzenie.</p>
+            <p>Z pasją tworzę śluby pełne stylu, ciepła i osobistych detali.
+            Jeśli marzysz o wyjątkowym dniu bez stresu — chętnie Ci w tym pomogę.</p>
+        </section>
+        <section id="oferta" class="section">
+            <h2>Oferta</h2>
+            <p>Pełna oferta już wkrótce! Skontaktuj się ze mną, aby uzyskać więcej informacji.</p>
+        </section>
+        <section id="kontakt" class="section">
+            <h2>Kontakt</h2>
+            <p>Instagram: @sercedoslubu<br />Email: kontakt@sercedoslubu.pl</p>
+        </section>
     </main>
-
     <footer>
-        <p>&copy; 2025 Serce do Ślubu</p>
+        <p>&copy; 2025 Serce do Ślubu. Wszystkie prawa zastrzeżone.</p>
     </footer>
 </body>
 </html>
