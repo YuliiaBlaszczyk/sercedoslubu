@@ -1,49 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serce do Ślubu</title>
-    <meta name="description" content="Profesjonalna organizacja ślubów z sercem i pasją. Serce do Ślubu to Twoja plannerka z Ukrainy, z duszą w Polsce.">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="logo">
-            <img src="logo.png" alt="Serce do Ślubu Logo">
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
             <h1>Serce do Ślubu</h1>
         </div>
-        <nav class="menu-toggle">
-            <input type="checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="hamburger">&#9776;</label>
-            <ul class="menu">
-                <li><a href="#o-mnie">O mnie</a></li>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="#omnie">O mnie</a></li>
                 <li><a href="#oferta">Oferta</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="o-mnie" class="section">
+        <section id="omnie">
             <h2>O mnie</h2>
-            <p>Mam na imię Yuliia i jestem wedding plannerką z sercem do ślubów.</p>
-            <p>W tym roku zorganizowałam własny międzynarodowy ślub od podstaw, mieszkając za granicą.
-            Mój własny ślub to moje najlepsze portfolio — dowód na to, że potrafię połączyć marzenia, logistykę i emocje w jedno niezapomniane wydarzenie.</p>
-            <p>Z pasją tworzę śluby pełne stylu, ciepła i osobistych detali.
-            Jeśli marzysz o wyjątkowym dniu bez stresu — chętnie Ci w tym pomogę.</p>
+            <p>Mój własny ślub był w kolorze szałwii i stał się moim najlepszym portfolio. Z miłością do detali i empatii pomagam parom stworzyć wyjątkowy dzień ich życia.</p>
         </section>
-        <section id="oferta" class="section">
+        <section id="oferta">
             <h2>Oferta</h2>
-            <p>Pełna oferta już wkrótce! Skontaktuj się ze mną, aby uzyskać więcej informacji.</p>
+            <p>Kompleksowa organizacja ślubu, koordynacja dnia, konsultacje tematyczne. Indywidualne podejście do każdej pary.</p>
         </section>
-        <section id="kontakt" class="section">
+        <section id="kontakt">
             <h2>Kontakt</h2>
-            <p>Instagram: @sercedoslubu<br />Email: kontakt@sercedoslubu.pl</p>
+            <p>Instagram | Facebook | Email: kontakt@sercedoslub.pl</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Serce do Ślubu. Wszystkie prawa zastrzeżone.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
