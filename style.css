@@ -1,60 +1,60 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #A9B8A4;
-    color: #2E2E2E;
-    background-image: url('logo.png');
-    background-repeat: repeat;
-    background-size: 300px auto;
-    background-position: center;
-    background-blend-mode: lighten;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    background-color: #A9B8A4;
-    padding: 20px;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #8BA89A;
+    color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
-.logo-container {
+header {
+    padding: 40px 0 20px;
     text-align: center;
 }
 
-.logo-container img {
-    width: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: none;
+.logo-container {
+    display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: white;
-    padding: 10px;
+    align-items: center;
 }
 
-nav ul li {
-    margin: 10px 0;
+.logo-heart {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-.menu-toggle {
-    font-size: 30px;
-    cursor: pointer;
+.logo-text {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 300;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
 }
 
 section {
-    padding: 60px 20px;
-    min-height: 100vh;
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
 }
