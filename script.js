@@ -1,4 +1,5 @@
+
 function toggleMenu() {
-    const menu = document.getElementById('menu');
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    const navLinks = document.getElementById('nav-links');
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 }

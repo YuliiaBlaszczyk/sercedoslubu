@@ -2,34 +2,45 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serce do Ślubu</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <div class="logo-heart">♡</div>
-            <div class="logo-text">Serce<br>do<br>Ślubu</div>
+        <div class="logo-heart">
+            <img src="heart.png" alt="Serce" class="moving-heart">
+            <h1>Serce do Ślubu</h1>
         </div>
-    </header>
-    <main>
-        <section class="about">
-            <h2>O mnie</h2>
-            <p>Mam na imię Yuliia i jestem wedding plannerką z sercem do ślubów.<br>
-            W tym roku zorganizowałam własny międzynarodowy ślub od podstaw, mieszkając za granicą.<br>
-            Mój własny ślub to moje najlepsze portfolio — dowód na to, że potrafię połączyć marzenia, logistykę i emocje w jedno niezapomniane wydarzenie.<br>
-            Z pasją tworzę śluby pełne stylu, ciepła i osobistych detali.<br>
-            Jeśli marzysz o wyjątkowym dniu bez stresu — chętnie Ci w tym pomogę.</p>
-        </section>
-        <section class="offer">
-            <h2>Oferta</h2>
-            <ul>
-                <li>Konsultacje ślubne</li>
-                <li>Budżet i harmonogram</li>
+        <nav>
+            <div class="burger" onclick="toggleMenu()">☰</div>
+            <ul id="nav-links">
+                <li><a href="#home">Główna</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#services">Usługi</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home"><h2>Witamy w Serce do Ślubu</h2></section>
+        <section id="about">
+            <h2>O mnie</h2>
+            <p>
+                Mam na imię Yuliia i jestem wedding plannerką z sercem do ślubów.
+                W tym roku zorganizowałam własny międzynarodowy ślub od podstaw, mieszkając za granicą.
+                Mój własny ślub to moje najlepsze portfolio — dowód na to, że potrafię połączyć marzenia, logistykę i emocje w jedno niezapomniane wydarzenie.
+                Z pasją tworzę śluby pełne stylu, ciepła i osobistych detali.
+                Jeśli marzysz o wyjątkowym dniu bez stresu — chętnie Ci w tym pomogę.
+            </p>
         </section>
+        <section id="services"><h2>Usługi</h2></section>
+        <section id="gallery"><h2>Galeria</h2></section>
+        <section id="contact"><h2>Kontakt</h2></section>
     </main>
 </body>
 </html>
