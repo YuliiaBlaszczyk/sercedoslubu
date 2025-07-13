@@ -1,5 +1,9 @@
 
 function toggleMenu() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    document.getElementById("nav-links").classList.toggle("show");
 }
+
+window.addEventListener('scroll', function () {
+    const heart = document.querySelector('.heart');
+    heart.style.top = 80 + window.scrollY * 0.5 + 'px';
+});

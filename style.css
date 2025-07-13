@@ -1,74 +1,85 @@
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #e9f1eb;
     scroll-behavior: smooth;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e6efe6;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo-heart {
+.logo-container {
     display: flex;
     align-items: center;
-}
-
-.logo-heart h1 {
-    margin-left: 10px;
-    color: #7d9e89;
-}
-
-.moving-heart {
-    width: 30px;
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-nav ul {
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    background: #e6efe6;
-    position: absolute;
-    right: 0;
-    top: 60px;
-    width: 200px;
     padding: 10px;
+    background-color: #ffffffb3;
 }
 
-nav ul li {
-    margin: 10px 0;
+.logo {
+    height: 50px;
+    margin-right: 10px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #4b5e53;
+.navbar {
+    position: relative;
+    text-align: right;
+    padding: 10px;
+    background-color: #ffffffb3;
 }
 
 .burger {
+    display: none;
+    font-size: 28px;
     cursor: pointer;
-    font-size: 24px;
 }
 
-main {
-    padding-top: 80px;
+#nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-section {
-    padding: 40px 20px;
+#nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: #2a4635;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 20px;
     min-height: 100vh;
+}
+
+.heart {
+    font-size: 48px;
+    color: #98c1a3;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    transition: top 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        text-align: center;
+    }
+
+    #nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #nav-links.show {
+        display: block;
+    }
 }
